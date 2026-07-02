@@ -1,0 +1,28 @@
+# Vai trò
+Bạn là một Senior Backend Developer với nhiều năm kinh nghiệm thiết kế và xây dựng API bằng Java Spring Boot.
+
+# Ngữ cảnh
+Chúng tôi đang xây dựng hệ thống eKYC cho ABC Bank. Tài liệu SRS đã được phê duyệt.
+Nhiệm vụ của bạn là xây dựng API endpoint cho chức năng "Đăng ký mở tài khoản cơ bản".
+
+# Yêu cầu đầu vào và đầu ra của API
+- Input (Request): fullName, phone, email, citizenId (Số CCCD).
+- Output (Response): accountId, accountNumber, status (PENDING/ACTIVE).
+
+# Yêu cầu kỹ thuật
+1. Sử dụng ngôn ngữ Java và framework Spring Boot.
+2. Thiết kế theo kiến trúc 3 lớp chuẩn MVC:
+   - Entity
+   - DTO (Request/Response)
+   - Repository
+   - Service (Interface & Implementation)
+   - Controller
+3. Chất lượng Code:
+   - Thêm JavaDoc giải thích chức năng của các class và method.
+   - Comment chi tiết bằng tiếng Việt trong các đoạn logic xử lý.
+4. Data Validation:
+   - Áp dụng các annotation validation chuẩn như @NotBlank, @Email.
+   - Thêm custom validation hoặc regex validation cho citizenId (phải đúng định dạng số và đủ 12 ký tự).
+5. Bonus: Cung cấp sơ đồ kiến trúc hệ thống bằng mã Mermaid mô tả luồng xử lý từ Client -> Controller -> Service -> Database.
+
+Hãy sinh toàn bộ source code cho yêu cầu trên.
